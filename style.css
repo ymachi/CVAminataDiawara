@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
 
 body {
     background: saddlebrown;
+    
 }
 
 .header{
@@ -15,7 +17,6 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: rgb(168, 132, 84);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,15 +25,147 @@ body {
 
 .logo{
     font-size: 25px;
-    color: black;
+    color: #2f1b0c;
     text-decoration: none;
     font-weight: 600;
 }
 
 .navbar a{
     font-size: 18px;
-    color: black;
+    color: #2f1b0c;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: blanchedalmond;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;  
+}
+
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2f1b0c ;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: blanchedalmond;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #2f1b0c;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    position:relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    border: 2px solid rgb(168, 132, 84);
+    border-radius: 8px;
+    font-size: 19px;
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: blanchedalmond;
+}
+.btn-box a:nth-child(2):hover{
+    color: blanchedalmond;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: rgb(168, 132, 84);
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgb(168, 132, 84);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.emoji{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.emoji a{
+    position:relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(168, 132, 84);
+    border-radius: 8px;
+    font-size: 20px;
+    color: rgb(168, 132, 84);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.emoji a:hover{
+    color:blanchedalmond;
+}
+
+.emoji a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(168, 132, 84);
+    z-index: -1;
+    transition: .5s;
+}
+
+.emoji a:hover::before{
+    width: 100%;
 }
