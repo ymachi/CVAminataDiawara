@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>CV Aminata</title>
 </head>
+
 <body>
-    <h1>CONTACT</h1>
-    
+    <header class="header">
+        <a href="index.html" class="logo">Amy.</a>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À Propos</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="cehun">&bull; Contact &bull;</h1>
+    <div id="container">
+        <div class="underline">
+        </div>
+        <div class="icon_wrapper">
+        </div>
+        <form action="#" method="post" id="contact_form">
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="Nom & Prénom" name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="Email" name="email" id="email_input" required>
+          </div>
+          <!--<div class="telephone">
+            <label for="name"></label>
+            <input type="text" placeholder="Numéro de téléphone" name="telephone" id="telephone_input" required>
+          </div> -->
+          <div class="subject">
+            <label for="subject"></label>
+            <select placeholder="Subject line" name="subject" id="subject_input" required>
+              <option disabled hidden selected>Sujet</option>
+              <option>J'aimerais commencer un projet</option>
+              <option>J'aimerais poser une question</option>
+              <option>J'aimerais faire une proposition</option>
+            </select>
+          </div>
+          <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Envoyer" id="form_button" />
+        </div>
+        </form> 
+       </div>
+<br>
+<br>
+<br>
+
+
+<footer>
+  <div class="emoji">
+      <a href="https://github.com/ymachi" target="_blank"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/aminata-diawara-92591b289/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="#"><i class='bx bxl-discord'></i></a>
+  </div>
+</footer>
+
 </body>
+
 </html>

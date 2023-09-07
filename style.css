@@ -7,27 +7,27 @@
 }
 
 body {
-    background: saddlebrown;
+    background: burlywood;
     
 }
 
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: fixed; /*maintenir le navigateur fixe même si la page défile*/
+    top: 0; /*permet de définir la distance supérieur*/
+    left: 0; /*permet de définir la distance du bord gauche*/
     width: 100%;
     padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    display: flex; /*permet d'aligner en horizontale*/
+    justify-content: space-between; /*permet d'avoir un espace égal entre des éléments*/
+    align-items: center; /*permet d'aligner au centre*/
 }
 
 .logo{
-    font-size: 25px;
+    font-size: 25px; /*taille de la police*/
     color: #2f1b0c;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 600; /*epaisseur du text*/
+    font-style: italic;
 }
 
 .navbar a{
@@ -36,12 +36,12 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: .3s;
+    transition: .3s; /*permet d'animer*/
 }
 
 .navbar a:hover,
 .navbar a.active{
-    color: blanchedalmond;
+    text-decoration: underline;
 }
 
 .home{
@@ -55,14 +55,13 @@ body {
 .home-content h1{
     font-size: 56px;
     font-weight: 700;
-    line-height: 1.2;
     color: #2f1b0c ;
 }
 
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
-    color: blanchedalmond;
+    color: #2f1b0c;
 }
 
 .home-content p{
@@ -79,38 +78,37 @@ body {
 }
 
 .btn-box a{
-    position:relative;
+    position:relative; /*permet de ne pas affecter la mise en page si nous changeons qlq chose*/
     display: inline-flex;
-    justify-content: center;
+    justify-content: center; /*pemet de créerun conteneur flexible même pour les élément intérieur*/
     align-items: center;
     width: 150px;
     height: 100%;
     border: 2px solid rgb(168, 132, 84);
     border-radius: 8px;
     font-size: 19px;
-    color: blanchedalmond;
+    color: #2f1b0c;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
+    overflow: hidden; /*pourmasquer les éléments qui débordent */
     transition: .5s;
 }
 
 .btn-box a:nth-child(2){
     background: transparent;
-    color: blanchedalmond;
+    color: #2f1b0c;
 }
 .btn-box a:nth-child(2):hover{
-    color: blanchedalmond;
+    color: #2f1b0c;
 }
 
 .btn-box a:nth-child(2)::before{
     background: rgb(168, 132, 84);
 }
-.btn-box a::before{
-    content: '';
-    position: absolute;
+.btn-box a::before{ /*pour inséré du contenu suppléméntaire, permet d'ajouter qql chose a un élément sans à avoir modifier */
+    content: ''; /*pour utiliser le ::before et ::after*/
+    position: absolute; /*permet de rendre indépendant un élément*/
     top: 0;
     left: 0;
     width: 0;
@@ -144,14 +142,14 @@ body {
     border: 2px solid rgb(168, 132, 84);
     border-radius: 8px;
     font-size: 20px;
-    color: rgb(168, 132, 84);
+    color: #2f1b0c;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
 }
 
 .emoji a:hover{
-    color:blanchedalmond;
+    color:#2f1b0c;
 }
 
 .emoji a::before{
@@ -170,14 +168,220 @@ body {
     width: 100%;
 }
 
-@media screen and (max-width: 600px){
-    /*Style spécifique pour les écrans de moins de 600px de large*/  
+/*CONTACT*/
+
+button {
+  overflow: visible;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px){  
-    /*Styles spécifiques pour les écrans de 601px à 1024px de large*/  
+button, select {
+  text-transform: none;
 }
 
-@media screen and (min-width: 1025px){
-    /*Styles spécifiques pour les écrans de plus de 1025px de large*/
+button, input, select, textarea {
+  color: #2f1b0c;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #2f1b0c;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.cehun{
+  color: #2f1b0c;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+} 
+
+.underline {
+  border-bottom: solid 2px #2f1b0c;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #2f1b0c;
+	color: #2f1b0c;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #2f1b0c;
+}
+
+:-moz-placeholder { 
+	color: #2f1b0c;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #2f1b0c;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #2f1b0c;
+}
+
+
+#form_button {
+  background: none;
+  border: solid 2px rgb(168, 132, 84);
+  border-radius: 8px;
+  color: #2f1b0c;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: rgb(168, 132, 84);
+  color:#2f1b0c;
+} 
+
+
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
 }
