@@ -61,7 +61,7 @@ body {
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
-    color: #2f1b0c;
+    color: rgb(107, 75, 34);
 }
 
 .home-content p{
@@ -168,7 +168,7 @@ body {
     width: 100%;
 }
 
-/*CONTACT*/
+/*CONTACT Pris sur codePen*/
 
 button {
   overflow: visible;
@@ -208,16 +208,16 @@ form {
   color: #2f1b0c;
   font-size: 32px;
   font-weight: 700;
-  letter-spacing: 7px;
+  letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
 } 
 
-.underline {
+/* {
   border-bottom: solid 2px #2f1b0c;
   margin: -0.512em auto;
   width: 80px;
-}
+} */
 
 .icon_wrapper {
   margin: 50px auto 0;
