@@ -132,7 +132,7 @@ body {
 }
 
 .emoji a{
-    position:relative;
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -146,6 +146,7 @@ body {
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
+    margin-left: 30px;
 }
 
 .emoji a:hover{
@@ -166,6 +167,19 @@ body {
 
 .emoji a:hover::before{
     width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+  
+  .navbar a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 /*CONTACT Pris sur codePen*/
@@ -385,3 +399,133 @@ textarea {
     font-size: 0.875em;
   }
 }
+
+
+
+/* A PROPOS */
+
+.section{
+  width: 100%;
+  min-width: 100vh;
+}
+
+.container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.texte{
+  float: left;
+  width: 55%;
+}
+
+.image{
+  float: right;
+  width: 40%;
+}
+.image img{
+  width: 75%;
+  height: auto;
+}
+.texte .content h3{
+  margin-top: 20px;
+  color:#2f1b0c; 
+  font-size: x-large;
+}
+
+.texte .content{
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.texte .content .button{
+  margin-top: 30px;
+}
+.texte .content .button a{
+  background-color: transparent;
+  padding: 12px 40px;
+  text-decoration: none;
+  color:#2f1b0c;
+  font-weight: bold;
+  border: 2px solid rgb(168, 132, 84);
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.texte .content .button a:hover{
+    background-color: rgb(168, 132, 84);
+}
+
+/*@media screen and (max-width: 768px) {
+  .section {
+    min-width: auto;
+  }
+  
+  .container {
+    width: 90%;
+    padding-top: 50px;
+  }
+  
+  .texte,
+  .image {
+    float: none;
+    width: 100%;
+  }
+  
+  .texte .content {
+    font-size: 14px;
+  }
+  
+  .texte .button a {
+    padding: 10px 30px;
+  }
+} */
+@media screen and (max-width: 760px){
+  .container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+  }
+  .texte{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #2f1b0c;
+  }
+  .image{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .image img{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+  }
+
+  .texte  .content h3{
+    text-align: center;
+    font-size: 19px;
+
+  }  
+
+  .texte .button{
+    text-align: center;
+    padding-bottom: 7%;
+  }
+
+  .texte .button a{
+    padding: 9px 30px;
+  }
+    
+
+} 
