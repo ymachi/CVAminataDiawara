@@ -532,16 +532,14 @@ textarea {
 
 /*Projets*/
 
-.projet{
+.projet {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
 }
 
-
-
-.card{
+.card {
   border: 1px solid #2f1b0c;
   border-radius: 5px;
   padding: 10px;
@@ -569,16 +567,17 @@ textarea {
 .card-text {
   font-size: 16px;
   color: #2f1b0c;
+  padding-bottom: 2%;
 }
 
-/*.btn-primary {
+.btn-primary {
   background-color: transparent;
   color: #2f1b0c;
   padding: 5px 10px;
   text-decoration: none;
-  color:#2f1b0c;
+  color: #2f1b0c;
   font-weight: bold;
-  font-size:  0.875em;
+  font-size: 0.875em;
   border: 2px solid rgb(168, 132, 84);
   text-transform: uppercase;
   border-radius: 8px;
@@ -586,5 +585,14 @@ textarea {
 
 .btn-primary:hover {
   background-color: rgb(168, 132, 84);
-}*/
+}
+
+@media (max-width: 768px) {
+  .projet {
+    flex-direction: column;
+  }
+  .emoji{
+    padding-bottom: -70%;
+  }
+}
 
