@@ -493,9 +493,8 @@ textarea {
   }
 } */
 @media screen and (max-width: 760px){
-  .deux{
-    text-align: center;
-  }
+
+  
   .container{
   width: 80%;
   display: block;
