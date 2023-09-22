@@ -404,6 +404,14 @@ textarea {
 
 /* A PROPOS */
 
+.deux{
+  color: #2f1b0c;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .section{
   width: 100%;
   min-width: 100vh;
@@ -485,6 +493,9 @@ textarea {
   }
 } */
 @media screen and (max-width: 760px){
+  .deux{
+    text-align: center;
+  }
   .container{
   width: 80%;
   display: block;
@@ -540,7 +551,7 @@ textarea {
 }
 
 .card {
-  border: 1px solid #2f1b0c;
+  border: 2px solid #2f1b0c;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
@@ -591,8 +602,8 @@ textarea {
   .projet {
     flex-direction: column;
   }
-  .emoji{
-    padding-bottom: -70%;
-  }
+
+
+
 }
 
