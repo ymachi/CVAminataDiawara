@@ -551,11 +551,11 @@ textarea {
   margin: 10px;
 }
 
-/*.card-img-top {
+.card-img-top {
   width: 100%;
   height: auto;
   border-radius: 5px;
-}*/
+}
 
 .card-title {
   font-size: 18px;
